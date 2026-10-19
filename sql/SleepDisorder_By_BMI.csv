@@ -1,0 +1,9 @@
+BMI_Category,Sleep_Disorder,People_Count,Disorder_Percentage
+Normal,Insomnia,9,4.17
+Normal,None,200,92.59
+Normal,Sleep Apnea,7,3.24
+Obese,Insomnia,4,40.0
+Obese,Sleep Apnea,6,60.0
+Overweight,Insomnia,64,43.24
+Overweight,None,19,12.84
+Overweight,Sleep Apnea,65,43.92

@@ -1,0 +1,4 @@
+step_tier,count,avg_heart_rate,avg_sleep_quality
+Moderate (5k-8k),319,69.0,7.53
+High (>8k),36,74.4,6.17
+Low (<5k),19,81.1,5.84
