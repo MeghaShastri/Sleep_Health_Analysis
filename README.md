@@ -4,11 +4,6 @@ An end-to-end SQL analysis exploring how occupational demands, daily activity le
 
 ---
 
-![Tableau Cloud](https://img.shields.io/badge/Visualization-Tableau%20Cloud-blue?style=flat-square&logo=tableau)
-![SQL](https://img.shields.io/badge/Data%20Pipeline-SQL-orange?style=flat-square&logo=postgresql)
-![Domain](https://img.shields.io/badge/Domain-Corporate%20Wellness%20&%20Risk-success?style=flat-square)
-
-
 **[🔗 Click Here to View the Live Interactive Dashboard on Tableau Cloud](https://prod-ch-a.online.tableau.com/t/maggipinky96-96b4bcb241/authoring/Sleep_Health_Analysis/Dashboard3#1)**
 
 ---
@@ -43,11 +38,11 @@ To move beyond basic averages, individuals were flagged under a compound vulnera
 
 ---
 
-## 4. Data Engineering & SQL Highlights
+## 4. Data Cleaning & SQL Highlights
 
 The data cleaning and aggregation pipeline was built using modular SQL queries. Key technical implementations include:
 * **String Parsing (`SPLIT_PART`):** Extracted and cast nested string measurements (e.g., converting `"140/90"` from the Blood Pressure column) into distinct numerical systolic and diastolic fields to accurately evaluate cardiovascular risk thresholds.
-* **Demographic Binning (`CASE` Statements):** Standardized continuous age variables into strategic cohort brackets (`Under 30`, `30-39`, `40-49`, `50+`) to uncover demographic concentration patterns.
+* **Demographic Categorization (`CASE` Statements):** Standardized continuous age variables into strategic categories (`Under 30`, `30-39`, `40-49`, `50+`) to uncover demographic concentration patterns.
 * **Multi-Factor Conditional Aggregation:** Built a single-pass risk pipeline using conditional `COUNT(CASE WHEN ...)` logic to simultaneously evaluate multiple physiological variables.
 
 ```sql
@@ -129,7 +124,7 @@ The Tableau Cloud dashboard is structured as a 4-part executive data story, guid
 
 ---
 
-## Key Takeaways and Strategic Recommendations
+## 6. Key Takeaways and Strategic Recommendations
 
 1. **Target Wellness Resources Where Risks Are Highest:** 
    Instead of general health programs for everyone, consider focusing wellness support (like stress-management tools) on mid-career age groups and high-stress departments.
@@ -137,4 +132,5 @@ The Tableau Cloud dashboard is structured as a 4-part executive data story, guid
    Since high-step employees in demanding roles still report poor sleep, reviewing shift rotations and rest periods for front-line teams could help lower burnout.
 3. **Promote Basic Health Screenings:** 
    With over 40% of people in this dataset showing sleep disorders or high blood pressure, encouraging routine health check-ups could help catch health risks early.
+   
 ---
